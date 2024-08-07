@@ -42,5 +42,10 @@ section {
     background-size: cover;
     background-position-y: 20%;
     height: 30rem;
-    text-shadow: white .1rem .1rem 1rem;
+    text-shadow: black .1rem .1rem 1rem;
+    color: white;
+}
+
+html {
+    background-color: rgb(95, 95, 95);
 }

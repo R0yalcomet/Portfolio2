@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 
 const AppLayout = () => {
     return (
-        <div>
+        <html>
             <header>
                 <h1>Portfolio - Roy Tisdale</h1>
                 <nav>
@@ -13,7 +13,7 @@ const AppLayout = () => {
                 </nav>
             </header>
             <Outlet/>
-        </div>
+        </html>
     )
 }
 
