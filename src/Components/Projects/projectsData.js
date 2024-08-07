@@ -1,5 +1,6 @@
 const projectsData = [
     {
+        id: "projectname1",
         name: "Project Name 1",
         image: null,
         summary: "Brief description of what the project is.",
@@ -7,6 +8,7 @@ const projectsData = [
         tools: "List of technologies used ex: javascript, React, etc..."
     },
     {
+        id: "projectname2",
         name: "Project Name 2",
         image: null,
         summary: "Brief description of what the project is.",
@@ -14,6 +16,7 @@ const projectsData = [
         tools: "List of technologies used ex: javascript, React, etc..."
     },
     {
+        id: "projectname3",
         name: "Project Name 3",
         image: null,
         summary: "Brief description of what the project is.",

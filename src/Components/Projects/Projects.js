@@ -7,7 +7,7 @@ const Projects = () => {
         <section id="projects">
             <h2>Projects</h2>
             <div>
-                {projectsData.map((project) => <ProjectCard project={project}/>)}
+                {projectsData.map((project, index) => <ProjectCard project={project} index={index}/>)}
             </div>
         </section>
     )
