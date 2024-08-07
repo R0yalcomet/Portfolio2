@@ -1,6 +1,10 @@
 import React from "react";
+import projectsData from "../Projects/projectsData";
 
 const Home = () => {
+    const featureIndex = 0;
+    const project = projectsData[featureIndex];
+
     return (
         <div>
             <section id="intro">
@@ -16,9 +20,9 @@ const Home = () => {
             <section id="featured">
                 <h2>Featured Project</h2>
                 <div>
-                    <h3>Project Name Here</h3>
-                    <p>Project description here blah blah blah...</p>
-                    <p>Tools Used: blah, blah, blah</p>
+                    <h3>{project.name}</h3>
+                    <p>{project.description}</p>
+                    <p>{project.tools}</p>
                 </div>
             </section>
         </div>
