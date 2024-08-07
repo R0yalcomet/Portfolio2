@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project, index }) => {
     return (
-        <div>
+        <div id="projectsCard">
             <h3>{project.name}</h3>
             <p>{project.summary}</p>
             <Link to={`/${project.id}-${index}`}>

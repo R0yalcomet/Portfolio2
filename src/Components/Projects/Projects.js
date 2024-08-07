@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <section id="projects">
             <h2>Projects</h2>
-            <div>
+            <div id="projectsContainer">
                 {projectsData.map((project, index) => <ProjectCard project={project} index={index}/>)}
             </div>
         </section>

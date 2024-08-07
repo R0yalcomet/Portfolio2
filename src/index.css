@@ -49,3 +49,16 @@ section {
 html {
     background-color: rgb(95, 95, 95);
 }
+
+#projectsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+#projectsCard {
+    background-color: aquamarine;
+    padding: 1rem;
+    margin: 1rem;
+}
