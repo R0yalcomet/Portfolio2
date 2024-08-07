@@ -1,3 +1,46 @@
+
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: cadetblue;
+    padding: .5rem 1.5rem;
+}
+
+header h1 {
+    text-align: left;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+section {
+    background-color: darkgoldenrod;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 70rem;
+}
+
+#banner h1 {
+    font-size: 4rem;
+    padding-top: 30%;
+}
+
+#banner h3 {
+    font-size: 1.5rem;
+}
+
+#banner {
+    background-image: url(../public/resources/Me1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20%;
+    height: 30rem;
+    text-shadow: white .1rem .1rem 1rem;
 }

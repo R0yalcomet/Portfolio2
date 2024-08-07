@@ -3,12 +3,12 @@ import React from "react";
 const Home = () => {
     return (
         <div>
-            <section id="banner">
-                <div>
+            <section id="intro">
+                <div id="banner">
                     <h1>Roy Tisdale</h1>
                     <h3>Front-End Engineer</h3>
                 </div>
-                <div>
+                <div id="about">
                     <h2>About Me</h2>
                     <p>Example text blah blah blah...</p>
                 </div>
