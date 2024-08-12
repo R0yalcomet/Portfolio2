@@ -9,6 +9,7 @@ const ProjectSingleView = () => {
     return (
         <section>
             <h2>{project.name}</h2>
+            <img src={project.image}/>
             <p>{project.description}</p>
             <p>{project.tools}</p>
         </section>

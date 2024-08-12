@@ -62,3 +62,7 @@ html {
     padding: 1rem;
     margin: 1rem;
 }
+
+#projectsCard img {
+    max-height: 10rem;
+}
