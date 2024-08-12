@@ -7,6 +7,8 @@ import Projects from "../Components/Projects/Projects";
 import ProjectSingleView from "../Components/Projects/ProjectSingleView";
 
 function App() {
+  document.title = "Portfolio - Roy Tisdale"
+
   return (
     <BrowserRouter>
       <Routes>
