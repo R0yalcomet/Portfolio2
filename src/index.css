@@ -6,13 +6,14 @@
 }
 
 header {
-    background-color: cadetblue;
+    background: linear-gradient(#F4FAFF, #B7ADCF);
     padding: .5rem 1.5rem;
     position: fixed;
     top: 0;
     width: 100%;
     height: 7.5vh;
     box-sizing: border-box;
+    border-bottom: #535657 .125rem solid;
 }
 
 header h1 {
@@ -26,13 +27,13 @@ header nav {
 }
 
 section {
-    background-color: darkgoldenrod;
+    background-color: #B7ADCF;
     margin: 1rem auto;
     padding: 1rem;
     max-width: 70rem;
     border-radius: 1rem;
-    border: .25rem solid darkblue;
-    box-shadow: black 1rem 1rem 5rem;
+    border: .125rem solid #535657;
+    box-shadow: #4F646F 1rem 1rem 5rem;
 }
 
 #banner h1 {
@@ -50,14 +51,15 @@ section {
     background-size: cover;
     background-position-y: 20%;
     height: 30rem;
-    text-shadow: black .1rem .1rem 1rem;
-    color: white;
+    text-shadow: #4F646F .1rem .1rem 2rem, #B7ADCF .1rem .1rem 1rem;
+    color: #F4FAFF;
     margin-bottom: 1rem;
+    border-radius: .5rem;
 }
 
 html {
-    background-color: grey;
-    box-shadow: inset rgb(15, 20, 25) 5rem 0 25rem, inset rgb(15, 20, 25) -5rem 0 25rem;
+    background-color: #F4FAFF;
+    box-shadow: inset #4F646F 5rem 0 25rem, inset #4F646F -5rem 0 25rem;
     height: 100vh;
     overflow: hidden;
 }
@@ -70,13 +72,16 @@ html {
 }
 
 #projectsCard {
-    background-color: aquamarine;
+    background-color: #DEE7E7;
     padding: 1rem;
     margin: 1rem;
+    border: .124rem solid #535657;
+    border-radius: .5rem;
 }
 
 #projectsCard img {
     max-height: 10rem;
+    border-radius: .5rem;
 }
 
 .contentContainer {
@@ -85,7 +90,7 @@ html {
     padding: 2.5vh 0;
     height: 92.5vh;
     box-sizing: border-box;
-    scrollbar-color: blue transparent;
+    scrollbar-color: #B7ADCF #4F646F;
 }
 
 p {
