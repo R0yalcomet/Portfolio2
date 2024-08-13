@@ -6,7 +6,7 @@ const Home = () => {
     const project = projectsData[featureIndex];
 
     return (
-        <div>
+        <div id="homeContainer" className="contentContainer">
             <section id="intro">
                 <div id="banner">
                     <h1>Roy Tisdale</h1>
