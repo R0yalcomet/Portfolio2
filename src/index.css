@@ -30,6 +30,9 @@ section {
     margin: 1rem auto;
     padding: 1rem;
     max-width: 70rem;
+    border-radius: 1rem;
+    border: .25rem solid darkblue;
+    box-shadow: black 1rem 1rem 5rem;
 }
 
 #banner h1 {
@@ -49,6 +52,7 @@ section {
     height: 30rem;
     text-shadow: black .1rem .1rem 1rem;
     color: white;
+    margin-bottom: 1rem;
 }
 
 html {
@@ -79,7 +83,14 @@ html {
     overflow-y: auto;
     margin-top: 7.5vh;
     padding: 2.5vh 0;
-    max-height: 92.5vh;
+    height: 92.5vh;
     box-sizing: border-box;
     scrollbar-color: blue transparent;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-wrap: stable;
+    padding: 0 3rem;
 }
