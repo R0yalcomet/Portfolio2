@@ -99,3 +99,34 @@ p {
     text-wrap: stable;
     padding: 0 3rem;
 }
+
+#contactPhoto {
+    background-image: url(../public/resources/Me2.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 10%;
+    border-radius: .5rem;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    line-height: 2.75rem;
+    min-height: 50vh;
+}
+
+#contact h1 {
+    font-size: 3rem;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#contact h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
