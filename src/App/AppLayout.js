@@ -7,9 +7,9 @@ const AppLayout = () => {
             <header>
                 <h1>Portfolio - Roy Tisdale</h1>
                 <nav>
-                    <Link to={"/"}><h3>Home</h3></Link>
-                    <Link to={"/projects"}><h3>Projects</h3></Link>
-                    <Link to={"/contact"}><h3>Contact</h3></Link>
+                    <Link className="navButton" to={"/"}><h3>Home</h3></Link>
+                    <Link className="navButton" to={"/projects"}><h3>Projects</h3></Link>
+                    <Link className="navButton" to={"/contact"}><h3>Contact</h3></Link>
                 </nav>
             </header>
             <Outlet/>

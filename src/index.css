@@ -7,23 +7,23 @@
 
 header {
     background: linear-gradient(#F4FAFF, #B7ADCF);
-    padding: .5rem 1.5rem;
+    padding: .75rem 1.5rem;
     position: fixed;
     top: 0;
     width: 100%;
     height: 7.5vh;
     box-sizing: border-box;
     border-bottom: #535657 .125rem solid;
-}
-
-header h1 {
-    text-align: left;
-}
-
-header nav {
     display: flex;
     justify-content: space-between;
-    width: 20rem;
+    align-items: center;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 25%;
+    height: 90%;
 }
 
 section {
@@ -129,4 +129,24 @@ p {
 #contact h3 {
     font-size: 1.5rem;
     font-weight: 200;
+}
+
+.navButton {
+    border: .125rem solid #535657;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    text-decoration: none;
+    background: linear-gradient(#F4FAFF, #B7ADCF);
+    color: black;
+}
+
+.navButton:hover {
+    background: #B7ADCF;
+}
+
+.navButton:active {
+    box-shadow: inset #4F646F 0 0 1rem -.125rem;
 }
