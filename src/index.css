@@ -150,3 +150,9 @@ p {
 .navButton:active {
     box-shadow: inset #4F646F 0 0 1rem -.125rem;
 }
+
+.currentPage {
+    background: #F4FAFF;
+    box-shadow: inset #B7ADCF 0 0 .5rem .25rem;
+    text-decoration: underline #535657 .125rem;
+}
