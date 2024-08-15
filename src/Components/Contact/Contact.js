@@ -6,13 +6,13 @@ const Contact = () => {
             <section id="contact">
                 <div id="contactPhoto"></div>
                 <div id="contactBody">
-                    <h1>Contact Me</h1><br/>
-                    <h2>Preferred Contact</h2>
-                    <h3>Email: <strong>rltisdale@outlook.com</strong></h3><br/>
-                    <h2>Other Info</h2>
-                    <h3>Alternate Email: <strong>rltisdale@mail.com</strong></h3>
-                    <h3>Phone: <strong>(913) 775-2686</strong></h3>
-                    <h3>Github: <strong>github.com/R0yalcomet</strong></h3>
+                    <h2>Contact Me</h2><br/>
+                    <h3>Preferred Contact</h3>
+                    <h4>Email: <strong>rltisdale@outlook.com</strong></h4><br/>
+                    <h3>Other Info</h3>
+                    <h4>Alternate Email: <strong>rltisdale@mail.com</strong></h4>
+                    <h4>Phone: <strong>(913) 775-2686</strong></h4>
+                    <h4>Github: <strong>github.com/R0yalcomet</strong></h4>
                 </div>
             </section>
         </div>

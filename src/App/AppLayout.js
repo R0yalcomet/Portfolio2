@@ -9,9 +9,9 @@ const AppLayout = () => {
             <header>
                 <h1>Portfolio - Roy Tisdale</h1>
                 <nav>
-                    <Link className={location.pathname === "/" ? "currentPage navButton" : "navButton"} to={"/"}><h3>Home</h3></Link>
-                    <Link className={location.pathname === "/projects" ? "currentPage navButton" : "navButton"} to={"/projects"}><h3>Projects</h3></Link>
-                    <Link className={location.pathname === "/contact" ? "currentPage navButton" : "navButton"} to={"/contact"}><h3>Contact</h3></Link>
+                    <Link className={location.pathname === "/" ? "currentPage navButton" : "navButton"} to={"/"}><p>Home</p></Link>
+                    <Link className={location.pathname === "/projects" ? "currentPage navButton" : "navButton"} to={"/projects"}><p>Projects</p></Link>
+                    <Link className={location.pathname === "/contact" ? "currentPage navButton" : "navButton"} to={"/contact"}><p>Contact</p></Link>
                 </nav>
             </header>
             <Outlet/>

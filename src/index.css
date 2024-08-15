@@ -117,16 +117,16 @@ p {
     min-height: 50vh;
 }
 
-#contact h1 {
+h2 {
     font-size: 3rem;
 }
 
-#contact h2 {
+h3 {
     font-size: 2rem;
     text-decoration: underline;
 }
 
-#contact h3 {
+h4 {
     font-size: 1.5rem;
     font-weight: 200;
 }
@@ -155,6 +155,7 @@ p {
     background: #F4FAFF;
     box-shadow: inset #B7ADCF 0 0 .5rem .25rem;
     text-decoration: underline #535657 .125rem;
+    font-weight: 800;
 }
 
 #singleView h2 {
@@ -166,4 +167,6 @@ p {
     border-radius: .5rem;
     margin: .5rem 3rem;
     float: right;
+    max-width: 50%;
 }
+
