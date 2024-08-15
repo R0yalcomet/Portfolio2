@@ -33,7 +33,7 @@ section {
     max-width: 70rem;
     border-radius: 1rem;
     border: .125rem solid #535657;
-    box-shadow: #4F646F 1rem 1rem 5rem;
+    box-shadow: #4F646F 1rem 1rem 5rem, inset #F4FAFF 0 0 7rem -.25rem;
 }
 
 #banner h1 {
