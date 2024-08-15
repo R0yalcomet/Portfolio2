@@ -156,3 +156,14 @@ p {
     box-shadow: inset #B7ADCF 0 0 .5rem .25rem;
     text-decoration: underline #535657 .125rem;
 }
+
+#singleView h2 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+#singleView img {
+    border-radius: .5rem;
+    margin: .5rem 3rem;
+    float: right;
+}
