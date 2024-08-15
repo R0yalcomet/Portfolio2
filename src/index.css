@@ -119,11 +119,13 @@ p {
 
 h2 {
     font-size: 3rem;
+    margin-bottom: .5rem;
 }
 
 h3 {
     font-size: 2rem;
     text-decoration: underline;
+    margin-bottom: .5rem;
 }
 
 h4 {
