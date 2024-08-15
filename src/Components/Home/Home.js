@@ -1,12 +1,13 @@
 import React from "react";
 import projectsData from "../Projects/projectsData";
+import ProjectSingleView from "../Projects/ProjectSingleView";
 
 const Home = () => {
     const featureIndex = 0;
     const project = projectsData[featureIndex];
 
     return (
-        <div id="homeContainer" className="contentContainer">
+        <div id="homeContainer">
             <section id="intro">
                 <div id="banner">
                     <h1>Roy Tisdale</h1>
@@ -19,14 +20,7 @@ const Home = () => {
                         <p>I am now experienced in front-end web development using tools such as Javascript, React, and Redux. I have plans to continue my education to become a full-stack developer and expand into other areas of programming.</p>
                 </div>
             </section>
-            <section id="featured">
-                <h2>Featured Project</h2>
-                <div>
-                    <h3>{project.name}</h3>
-                    <p>{project.description}</p>
-                    <p>{project.tools}</p>
-                </div>
-            </section>
+            <ProjectSingleView id="featuredProject" project={project} featured={true}/>
         </div>
     )
 }

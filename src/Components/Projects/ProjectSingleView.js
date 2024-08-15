@@ -1,20 +1,21 @@
 import React, { useEffect } from "react";
 import projectsData from "./projectsData";
 
-const ProjectSingleView = () => {
-    const path = window.location.pathname;
-    const index = path.split("-").slice(-1);
-    const project = projectsData[index];
+
+const ProjectSingleView = ({project = null, featured = false}) => {
+    if (!project) {
+        const path = window.location.pathname;
+        const index = path.split("-").slice(-1);
+        project = projectsData[index];
+    }
 
     return (
-        <div className="contentContainer">
-            <section id="singleView">
-                <h2>{project.name}</h2>
-                <img src={project.image}/>
-                <p>{project.description}</p>
-                <p>{project.tools}</p>
-            </section>
-        </div> 
+        <section id="singleView">
+            {featured ? <><h2>Featured Project</h2><h3>{project.name}</h3></> : <h2>{project.name}</h2>}
+            <img src={project.image}/>
+            <p>{project.description}</p>
+            <p>{project.tools}</p>
+        </section>
     )
 }
 

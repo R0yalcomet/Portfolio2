@@ -14,7 +14,9 @@ const AppLayout = () => {
                     <Link className={location.pathname === "/contact" ? "currentPage navButton" : "navButton"} to={"/contact"}><p>Contact</p></Link>
                 </nav>
             </header>
-            <Outlet/>
+            <div className="contentContainer">
+                <Outlet/>
+            </div>
         </div>
     )
 }
