@@ -72,7 +72,8 @@ html {
 }
 
 #projectsCard {
-    background-color: #DEE7E7;
+    background: #F4FAFF;
+    box-shadow: inset #535657 0 0 3rem -1rem;
     padding: 1rem;
     margin: 1rem;
     border: .124rem solid #535657;
