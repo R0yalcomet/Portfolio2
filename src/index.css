@@ -76,7 +76,7 @@ html {
 
 #projectsContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 1rem;
     flex-wrap: wrap;
 }
@@ -88,6 +88,7 @@ html {
     margin: 1rem;
     border: .124rem solid #535657;
     border-radius: .5rem;
+    width: 25rem;
 }
 
 #projectsCard img {
@@ -160,11 +161,13 @@ h4 {
     color: black;
 }
 
-.navButton:hover {
+.navButton:hover,
+#projectsCard button:hover {
     background: #B7ADCF;
 }
 
-.navButton:active {
+.navButton:active,
+#projectsCard button:active {
     box-shadow: inset #4F646F 0 0 1rem -.125rem;
 }
 
@@ -182,3 +185,15 @@ h4 {
     max-width: 50%;
 }
 
+#projects {
+    max-width: 80%;
+}
+
+#projectsCard button {
+    font-family: "Concert one";
+    background: linear-gradient(#F4FAFF, #B7ADCF);
+    border: #535657 .1rem solid;
+    font-size: 1rem;
+    padding: .25rem;
+    border-radius: .25rem;
+}
