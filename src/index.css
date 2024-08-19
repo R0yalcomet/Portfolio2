@@ -19,6 +19,14 @@ header {
     align-items: center;
 }
 
+header h1 {
+    font-family: "bona nova sc";
+}
+
+header p {
+    font-family: "concert one";
+}
+
 nav {
     display: inline-flex;
     justify-content: space-between;
@@ -37,12 +45,14 @@ section {
 }
 
 #banner h1 {
-    font-size: 4rem;
-    padding-top: 30%;
+    font-size: 6rem;
+    padding-top: 23%;
+    font-family: "Satisfy";
 }
 
 #banner h3 {
-    font-size: 1.5rem;
+    font-family: "Concert one";
+    font-weight: 300;
 }
 
 #banner {
@@ -95,10 +105,11 @@ html {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2rem;
     text-wrap: stable;
     padding: 0 3rem;
+    font-family: "Space mono";
 }
 
 #contactPhoto {
@@ -121,17 +132,20 @@ p {
 h2 {
     font-size: 3rem;
     margin-bottom: .5rem;
+    font-family: "Bona nova sc";
 }
 
 h3 {
     font-size: 2rem;
     text-decoration: underline;
     margin-bottom: .5rem;
+    font-family: "Space mono";
 }
 
 h4 {
     font-size: 1.5rem;
     font-weight: 200;
+    font-family: "Space mono";
 }
 
 .navButton {
