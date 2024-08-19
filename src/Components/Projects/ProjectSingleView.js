@@ -15,13 +15,14 @@ const ProjectSingleView = ({project = null, featured = false}) => {
             <img src={project.image}/>
             <p>{project.tools}</p>
             <br/>
-            <p>{project.goal}</p>
+            <p className="hanging"><strong>Goal: </strong>{project.goal}</p>
             <br/>
-            <p>{project.features}</p>
+            <p className="hanging"><strong>Features: </strong>{project.features}</p>
             <br/>
             <p>{project.commentary}</p>
             <br/>
-            <p>{project.todo}</p>
+            <p><strong>To Do: </strong></p>
+            <ul>{project.todo ? project.todo.map((item, index) => <li key={index}>{item}</li>) : null}</ul>
         </section>
     )
 }

@@ -105,7 +105,7 @@ html {
     scrollbar-color: #B7ADCF #4F646F;
 }
 
-p {
+p, li {
     font-size: 1.25rem;
     line-height: 2rem;
     text-wrap: stable;
@@ -196,4 +196,21 @@ h4 {
     font-size: 1rem;
     padding: .25rem;
     border-radius: .25rem;
+}
+
+#singleView p, li {
+    text-align: justify;
+}
+
+.hanging {
+    margin-left: 1rem;
+    text-indent: -1rem;
+}
+
+ul {
+    margin: 0 5rem;
+}
+
+li {
+    padding: 0;
 }
