@@ -3,8 +3,8 @@ import projectsData from "../Projects/projectsData";
 import ProjectSingleView from "../Projects/ProjectSingleView";
 
 const Home = () => {
-    const featureIndex = 0;
-    const project = projectsData[featureIndex];
+    const featureId = "redditApp";
+    const project = projectsData[featureId];
 
     return (
         <div id="homeContainer">

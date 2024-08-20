@@ -7,7 +7,7 @@ const Projects = () => {
         <section id="projects">
             <h2>Projects</h2>
             <div id="projectsContainer">
-                {projectsData.map((project, index) => <ProjectCard project={project} index={index}/>)}
+                {Object.values(projectsData).map((project) => <ProjectCard key={project.id} project={project}/>)}
             </div>
         </section>
     )

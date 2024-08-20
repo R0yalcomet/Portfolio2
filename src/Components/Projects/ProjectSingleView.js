@@ -5,8 +5,8 @@ import projectsData from "./projectsData";
 const ProjectSingleView = ({project = null, featured = false}) => {
     if (!project) {
         const path = window.location.pathname;
-        const index = path.split("-").slice(-1);
-        project = projectsData[index];
+        const id = path.split("/").slice(-1);
+        project = projectsData[id];
     }
 
     return (
