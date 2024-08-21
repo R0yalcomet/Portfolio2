@@ -7,7 +7,6 @@ const ProjectCard = ({ project }) => {
             <h3>{project.name}</h3>
             <img src={project.image}/>
             <p>{project.summary}</p>
-            <p>{project.id}</p>
             <Link to={`${project.id}`}>
                 <button>View Details</button>
             </Link>
