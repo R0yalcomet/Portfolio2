@@ -17,6 +17,8 @@ import Portfolio from "./projectImages/Portfolio.jpg";
         commentary: "additional info about particular challenges or the development of the project",
         tools: "list of technologies used ex: javascript, React, etc...",
         todo: ["fixes, adjustments, or extra features not yet present in the project"],
+        link: "link to live page if possible",
+        github: "link to project repository"
     }
 
 */
@@ -31,7 +33,9 @@ const projectsData = {
         features: "The user is able to filter the displayed posts using a search term or selecting a subreddit from the list. The user may also click a chosen post to view the full post and the comments under the post.",
         commentary: "During the development of this project I encountered a challenge in relation to the API. I intended for the user to be able to use both the search function and subreddit filters concurrently, but one would always overwrite the other. While I believe my code for the API interactions should be able to make the proper requests for data matching both the search and filter constraints, the API continues to return data that only matches one of these constraints. Unfortunately I have not yet fixed this issue and the user is limited to choosing between the search function or the subreddit filters, but not both.",
         tools: "Javascript, CSS, React, React-Router, Redux, API",
-        todo: ["improve styling", "hide empty/deleted comments", "screen-size responsive styling", "fix filter vs search API conflict"]
+        todo: ["improve styling", "screen-size responsive styling", "fix filter vs search API conflict"],
+        link: "",
+        github: "https://github.com/R0yalcomet/RedditApp"
     },
     jammming: {
         id: "jammming",
@@ -43,6 +47,8 @@ const projectsData = {
         commentary: "When I started this project I had very little experience using external API's and had difficulty setting up the API request and authentication process. I was able to create working code for the API communication with the assistance of resources provided Github user Sypher122333.",
         tools: "Javascript, CSS, React, API",
         todo: ["catch and handle errors", "add audio previews to displayed tracks", "add more advanced search options", "improve styling", "display default tracks when a search term is not given"],
+        link: "https://r0yalcomet.github.io/SpotifyAPIProject/",
+        github: "https://github.com/R0yalcomet/SpotifyAPIProject"
     },
     portfolioOld: {
         id: "portfolioOld",
@@ -54,7 +60,8 @@ const projectsData = {
         commentary: "Only a single project is displayed on repeat do display the list structure and project layout. This project was created early on in my coding journey when I had only a basic understanding of front-end development. As such the web page is somewhat rudimentary and has a variety of small issues.",
         tools: "HTML, CSS, Javascript",
         todo: ["N/A - see updated Portfolio"],
-        link: "https://r0yalcomet.github.io/Portfolio/index.html"
+        link: "https://r0yalcomet.github.io/Portfolio/index.html",
+        github: "https://github.com/R0yalcomet/Portfolio"
     },
     portfolioNew: {
         id: "portfolioNew",
@@ -66,6 +73,8 @@ const projectsData = {
         commentary: "This project was created as an updated alternative to my original Portfolio to demonstrate improvement of skill and knowledge following my completion of Codecademy's Front-End Engineer career course.",
         tools: "Javascript, CSS, React, React Router",
         todo: ["screen-size responsive design", "clean up code", "update with new projects", "continue to improve design and structure as I gain more experience and knowledge"],
+        link: "",
+        github: "https://github.com/R0yalcomet/Portfolio2"
     }
 };
 
