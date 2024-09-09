@@ -31,10 +31,10 @@ const projectsData = {
         summary: "Fetch and display posts from Reddit for user to view.",
         goal: "This project's goal was to create a web app that allows the user to view and browse posts by fetching data from Reddit's unofficial JSON API.",
         features: "The user is able to filter the displayed posts using a search term or selecting a subreddit from the list. The user may also click a chosen post to view the full post and the comments under the post.",
-        commentary: "During the development of this project I encountered a challenge in relation to the API. I intended for the user to be able to use both the search function and subreddit filters concurrently, but one would always overwrite the other. While I believe my code for the API interactions should be able to make the proper requests for data matching both the search and filter constraints, the API continues to return data that only matches one of these constraints. Unfortunately I have not yet fixed this issue and the user is limited to choosing between the search function or the subreddit filters, but not both.",
+        commentary: "During the development of this project I encountered a challenge in relation to the API. I intended for the user to be able to use both the search function and subreddit filters concurrently, but one would always overwrite the other. While I believe my code for the API interactions should be able to make the proper requests for data matching both the search and filter constraints, the API continues to return data that only matches one of these constraints. Unfortunately I believe this may be a quirk of using the unofficial JSON API, but I will still try to find a solution in the future.",
         tools: "Javascript, CSS, React, React-Router, Redux, API",
         todo: ["improve styling", "screen-size responsive styling", "fix filter vs search API conflict"],
-        link: "",
+        link: "https://r0yal-redditlite.netlify.app/",
         github: "https://github.com/R0yalcomet/RedditApp"
     },
     jammming: {
@@ -46,7 +46,7 @@ const projectsData = {
         features: "The user may sign in with their spotify account. Once signed in, the user can find songs using the search function and add chosen songs to a custom playlist which can then be saved to the user's account. ",
         commentary: "When I started this project I had very little experience using external API's and had difficulty setting up the API request and authentication process. I was able to create working code for the API communication with the assistance of resources provided Github user Sypher122333.",
         tools: "Javascript, CSS, React, API",
-        todo: ["catch and handle errors", "add audio previews to displayed tracks", "add more advanced search options", "improve styling", "display default tracks when a search term is not given"],
+        todo: ["catch and handle errors", "add audio previews to displayed tracks", "add more advanced search options", "improve styling"],
         link: "https://r0yalcomet.github.io/SpotifyAPIProject/",
         github: "https://github.com/R0yalcomet/SpotifyAPIProject"
     },
