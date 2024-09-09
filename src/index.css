@@ -1,37 +1,33 @@
+/* 
+    1. General Styles
+    2. Header Styles
+        2.1. Nav Styles
+    3. Home Styles
+    4. Projects Styles
+    5. contact Styles
+*/
 
+/* 1. General Styles */
 * {
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background: linear-gradient(#F4FAFF, #B7ADCF);
-    padding: .75rem 1.5rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 7.5vh;
+html {
+    background-color: #F4FAFF;
+    box-shadow: inset #4F646F 5rem 0 25rem, inset #4F646F -5rem 0 25rem;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contentContainer {
+    overflow-y: auto;
+    margin-top: 7.5vh;
+    padding: 2.5vh 0;
+    height: 92.5vh;
     box-sizing: border-box;
-    border-bottom: #535657 .125rem solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    font-family: "bona nova sc";
-}
-
-header p {
-    font-family: "concert one";
-}
-
-nav {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 25%;
-    height: 90%;
+    scrollbar-color: #B7ADCF #4F646F;
 }
 
 section {
@@ -44,6 +40,101 @@ section {
     box-shadow: #4F646F 1rem 1rem 5rem, inset #F4FAFF 0 0 7rem -.25rem;
 }
 
+section p {
+    padding: 0 3rem;
+}
+
+p, li {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-wrap: stable;
+    font-family: "Space mono";
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+    font-family: "Bona nova sc";
+}
+
+h3 {
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: .5rem;
+    font-family: "Space mono";
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: "Space mono";
+}
+
+.hanging {
+    margin-left: 1rem;
+    text-indent: -1rem;
+}
+
+/* 2. Header Styles */
+header {
+    background: linear-gradient(#F4FAFF, #B7ADCF);
+    padding: .75rem 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.5rem;
+    box-sizing: border-box;
+    border-bottom: #535657 .125rem solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "bona nova sc";
+}
+
+/* 2.1. Nav Styles */
+header p {
+    font-family: "concert one";
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 25%;
+    min-width: 18rem;
+    height: 90%;
+}
+
+.navButton {
+    border: .125rem solid #535657;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    text-decoration: none;
+    background: linear-gradient(#F4FAFF, #B7ADCF);
+    color: black;
+}
+
+.navButton:hover {
+    background: #B7ADCF;
+}
+
+.navButton:active {
+    box-shadow: inset #4F646F 0 0 1rem -.125rem;
+}
+
+.currentPage {
+    background: #F4FAFF;
+    box-shadow: inset #B7ADCF 0 0 .5rem .25rem;
+    text-decoration: underline #535657 .125rem;
+    font-weight: 800;
+}
+
+/* 3. Home Styles */
 #banner h1 {
     font-size: 6rem;
     padding-top: 23%;
@@ -67,18 +158,16 @@ section {
     border-radius: .5rem;
 }
 
-html {
-    background-color: #F4FAFF;
-    box-shadow: inset #4F646F 5rem 0 25rem, inset #4F646F -5rem 0 25rem;
-    height: 100vh;
-    overflow: hidden;
-}
-
+/* 4. Projects Styles */
 #projectsContainer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
     flex-wrap: wrap;
+}
+
+#projects {
+    max-width: 80%;
 }
 
 #projectsCard {
@@ -95,29 +184,49 @@ html {
     align-items: center;
 }
 
+#projectsCard button {
+    font-family: "Concert one";
+    background: linear-gradient(#F4FAFF, #B7ADCF);
+    border: #535657 .1rem solid;
+    font-size: 1rem;
+    padding: .25rem;
+    border-radius: .25rem;
+}
+
+#projectsCard button:hover {
+    background: #B7ADCF;
+}
+
+#projectsCard button:active {
+    box-shadow: inset #4F646F 0 0 1rem -.125rem;
+}
+
 #projectsCard img {
     max-height: 10rem;
     width: fit-content;
     border-radius: .5rem;
 }
 
-.contentContainer {
-    overflow-y: auto;
-    margin-top: 7.5vh;
-    padding: 2.5vh 0;
-    height: 92.5vh;
-    box-sizing: border-box;
-    scrollbar-color: #B7ADCF #4F646F;
+#singleView img {
+    border-radius: .5rem;
+    margin: .5rem 3rem;
+    float: right;
+    max-width: 50%;
 }
 
-p, li {
-    font-size: 1.25rem;
-    line-height: 2rem;
-    text-wrap: stable;
-    padding: 0 3rem;
-    font-family: "Space mono";
+#singleView p, li {
+    text-align: justify;
 }
 
+ul {
+    margin: 0 5rem;
+}
+
+li {
+    padding: 0;
+}
+
+/* 5. Contact Styles */
 #contactPhoto {
     background-image: url(../public/resources/Me2.jpg);
     height: 100%;
@@ -133,89 +242,4 @@ p, li {
     grid-template-columns: 1fr 2fr;
     line-height: 2.75rem;
     min-height: 50vh;
-}
-
-h2 {
-    font-size: 3rem;
-    margin-bottom: .5rem;
-    font-family: "Bona nova sc";
-}
-
-h3 {
-    font-size: 2rem;
-    text-decoration: underline;
-    margin-bottom: .5rem;
-    font-family: "Space mono";
-}
-
-h4 {
-    font-size: 1.5rem;
-    font-weight: 200;
-    font-family: "Space mono";
-}
-
-.navButton {
-    border: .125rem solid #535657;
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: .5rem;
-    text-decoration: none;
-    background: linear-gradient(#F4FAFF, #B7ADCF);
-    color: black;
-}
-
-.navButton:hover,
-#projectsCard button:hover {
-    background: #B7ADCF;
-}
-
-.navButton:active,
-#projectsCard button:active {
-    box-shadow: inset #4F646F 0 0 1rem -.125rem;
-}
-
-.currentPage {
-    background: #F4FAFF;
-    box-shadow: inset #B7ADCF 0 0 .5rem .25rem;
-    text-decoration: underline #535657 .125rem;
-    font-weight: 800;
-}
-
-#singleView img {
-    border-radius: .5rem;
-    margin: .5rem 3rem;
-    float: right;
-    max-width: 50%;
-}
-
-#projects {
-    max-width: 80%;
-}
-
-#projectsCard button {
-    font-family: "Concert one";
-    background: linear-gradient(#F4FAFF, #B7ADCF);
-    border: #535657 .1rem solid;
-    font-size: 1rem;
-    padding: .25rem;
-    border-radius: .25rem;
-}
-
-#singleView p, li {
-    text-align: justify;
-}
-
-.hanging {
-    margin-left: 1rem;
-    text-indent: -1rem;
-}
-
-ul {
-    margin: 0 5rem;
-}
-
-li {
-    padding: 0;
 }
