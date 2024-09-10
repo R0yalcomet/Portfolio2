@@ -11,7 +11,7 @@ const Contact = () => {
                 <h3>Other Info</h3>
                 <h4>Alternate Email: <strong>rltisdale@mail.com</strong></h4>
                 <h4>Phone: <strong>(913) 775-2686</strong></h4>
-                <h4>Github: <strong>github.com/R0yalcomet</strong></h4>
+                <h4>Github: <a href="https://github.com/R0yalcomet" target="_blank"><strong>github.com/R0yalcomet</strong></a></h4>
             </div>
         </section>
     )
