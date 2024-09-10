@@ -19,7 +19,7 @@ const Home = () => {
                     <br/>
                     <p>I am now experienced in front-end web development using tools such as Javascript, React, and Redux. I have plans to continue my education to become a full-stack developer and expand into other areas of programming.</p>
                     <br/>
-                    <p>My favorite part of the coding process is discovering a solution to a problem that has me stumped. Finally finding that fix and seeing my code work as intended feels like I've just solved a complex puzzle and I take satisfaction knowing that I have learned something new.</p>
+                    <p>My favorite part of the coding process is discovering a solution to a problem that has me stumped. Finally finding that fix and seeing my code work as intended feels like I've just solved a riddle and I take satisfaction knowing that I have learned something new.</p>
                 </div>
             </section>
             <ProjectSingleView id="featuredProject" project={project} featured={true}/>
