@@ -137,13 +137,13 @@ nav {
 /* 3. Home Styles */
 #banner h1 {
     font-size: 6rem;
-    padding-top: 23%;
     font-family: "Satisfy";
 }
 
 #banner h3 {
     font-family: "Concert one";
     font-weight: 300;
+    font-size: 2rem;
 }
 
 #banner {
@@ -151,11 +151,16 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 20%;
-    height: 30rem;
+    background-position-x: center;
+    height: 25rem;
     text-shadow: #4F646F .1rem .1rem 2rem, #B7ADCF .1rem .1rem 1rem;
     color: #F4FAFF;
     margin-bottom: 1rem;
     border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 3rem;
 }
 
 /* 4. Projects Styles */
@@ -166,13 +171,10 @@ nav {
     flex-wrap: wrap;
 }
 
-#projects {
-    max-width: 80%;
-}
-
 #projectsCard {
     background: #F4FAFF;
     box-shadow: inset #535657 0 0 3rem -1rem;
+    box-sizing: border-box;
     padding: 1rem;
     margin: 1rem;
     border: .124rem solid #535657;
@@ -203,7 +205,7 @@ nav {
 
 #projectsCard img {
     max-height: 10rem;
-    width: fit-content;
+    max-width: 95%;
     border-radius: .5rem;
 }
 
@@ -215,7 +217,7 @@ nav {
 }
 
 #singleView p, li {
-    text-align: justify;
+    text-align: left;
 }
 
 ul {
@@ -229,10 +231,8 @@ li {
 /* 5. Contact Styles */
 #contactPhoto {
     background-image: url(../public/resources/Me2.jpg);
-    height: 100%;
-    width: 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center 10%;
     border-radius: .5rem;
 }
@@ -242,4 +242,98 @@ li {
     grid-template-columns: 1fr 2fr;
     line-height: 2.75rem;
     min-height: 50vh;
+}
+
+/* 6. Screen Size Styles */
+@media only screen and (max-width: 1200px) {
+    p, li {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    #projectsCard {
+        width: 20rem;
+        margin: .5rem;
+    }
+
+    #projectsCard p {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    nav {
+        height: 1.5rem;
+        width: auto;
+    }
+
+    .navButton {
+        width: 4.5rem;
+        padding: .25rem;
+        margin-right: .25rem;
+    }
+
+    #projectsCard {
+        width: 15rem;
+        padding: .25rem;
+    }
+
+    #singleView img {
+        float: none;
+        max-width: 90%;
+        margin: .5rem auto;
+    }
+
+    #contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        justify-items: center;
+    }
+
+    #contactPhoto {
+        width: 70%;
+        background-position: center 20%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    #banner h1 {
+        font-size: 3.5rem;
+    }
+
+    #banner h3 {
+        font-size: 1.5rem;
+    }
+
+    section p, li {
+        padding: .5rem;
+    }
+
+    ul {
+        margin: 0 2rem;
+    }
 }
