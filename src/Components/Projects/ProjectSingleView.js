@@ -15,6 +15,8 @@ const ProjectSingleView = ({project = null, featured = false}) => {
             <img src={project.image}/>
             <p>{project.tools}</p>
             <br/>
+            {project.link ? <><p><a href={project.link} target="_blank"><strong>View Live Page</strong></a></p> <br/></> : null}
+            {project.github ? <><p><a href={project.github} target="_blank"><strong>View Github Repo</strong></a></p> <br/></> : null}
             <p className="hanging"><strong>Goal: </strong>{project.goal}</p>
             <br/>
             <p className="hanging"><strong>Features: </strong>{project.features}</p>
