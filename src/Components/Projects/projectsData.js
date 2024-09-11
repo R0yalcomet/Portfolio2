@@ -33,7 +33,7 @@ const projectsData = {
         features: "The user is able to filter the displayed posts using a search term or selecting a subreddit from the list. The user may also click a chosen post to view the full post and the comments under the post.",
         commentary: "During the development of this project I encountered a challenge in relation to the API. I intended for the user to be able to use both the search function and subreddit filters concurrently, but one would always overwrite the other. While I believe my code for the API interactions should be able to make the proper requests for data matching both the search and filter constraints, the API continues to return data that only matches one of these constraints. Unfortunately I believe this may be a quirk of using the unofficial JSON API, but I will still try to find a solution in the future.",
         tools: "Javascript, CSS, React, React-Router, Redux, API",
-        todo: ["improve styling", "screen-size responsive styling", "fix filter vs search API conflict"],
+        todo: ["add support for video/gif posts", "improve styling", "screen-size responsive styling", "fix filter vs search API conflict"],
         link: "https://r0yal-redditlite.netlify.app/",
         github: "https://github.com/R0yalcomet/RedditApp"
     },
@@ -72,7 +72,7 @@ const projectsData = {
         features: "The project includes a Home page, a Projects page, and a Contact page. The Home page displays information about myself and a featured project. The Projects page displays a list of projects which can be viewed in detail. The Contact page displays my contact details.",
         commentary: "This project was created as an updated alternative to my original Portfolio to demonstrate improvement of skill and knowledge following my completion of Codecademy's Front-End Engineer career course.",
         tools: "Javascript, CSS, React, React Router",
-        todo: ["screen-size responsive design", "clean up code", "update with new projects", "continue to improve design and structure as I gain more experience and knowledge"],
+        todo: ["update with new projects", "continue to improve design and structure as I gain more experience and knowledge", "add image gallery to project pages?"],
         link: "",
         github: "https://github.com/R0yalcomet/Portfolio2"
     }
