@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import projectsData from "./projectsData";
 
 
@@ -12,11 +12,11 @@ const ProjectSingleView = ({project = null, featured = false}) => {
     return (
         <section id="singleView">
             {featured ? <><h2>Featured Project</h2><h3>{project.name}</h3></> : <h2>{project.name}</h2>}
-            <img alt="project preview image" src={project.image}/>
+            <img alt="project preview" src={project.image}/>
             <p>{project.tools}</p>
             <br/>
-            {project.link ? <><p><a href={project.link} target="_blank"><strong>View Live Page</strong></a></p> <br/></> : null}
-            {project.github ? <><p><a href={project.github} target="_blank"><strong>View Github Repo</strong></a></p> <br/></> : null}
+            {project.link ? <><p><a href={project.link} rel="noreferrer" target="_blank"><strong>View Live Page</strong></a></p> <br/></> : null}
+            {project.github ? <><p><a href={project.github} rel="noreferrer" target="_blank"><strong>View Github Repo</strong></a></p> <br/></> : null}
             <p className="hanging"><strong>Goal: </strong>{project.goal}</p>
             <br/>
             <p className="hanging"><strong>Features: </strong>{project.features}</p>

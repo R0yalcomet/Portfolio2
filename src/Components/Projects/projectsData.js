@@ -1,4 +1,3 @@
-import React from "react";
 import RedditApp from "./projectImages/RedditApp.jpg";
 import Jammming from "./projectImages/Jammming.jpg";
 import OldPortfolio from "./projectImages/OldPortfolio.jpg";
