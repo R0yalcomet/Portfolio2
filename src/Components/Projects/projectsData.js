@@ -72,7 +72,7 @@ const projectsData = {
         commentary: "This project was created as an updated alternative to my original Portfolio to demonstrate improvement of skill and knowledge following my completion of Codecademy's Front-End Engineer career course.",
         tools: "Javascript, CSS, React, React Router",
         todo: ["update with new projects", "continue to improve design and structure as I gain more experience and knowledge", "add image gallery to project pages?"],
-        link: "",
+        link: "https://tisdale-portfolio.netlify.app/",
         github: "https://github.com/R0yalcomet/Portfolio2"
     }
 };
