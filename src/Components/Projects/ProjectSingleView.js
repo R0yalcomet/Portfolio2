@@ -12,7 +12,7 @@ const ProjectSingleView = ({project = null, featured = false}) => {
     return (
         <section id="singleView">
             {featured ? <><h2>Featured Project</h2><h3>{project.name}</h3></> : <h2>{project.name}</h2>}
-            <img alt="project preview" src={project.image}/>
+            {project.image ? <img alt="project preview" src={project.image}/> : <img alt="placeholder" src="https://picsum.photos/id/96/500/300.jpg?blur=5"/>}
             <p>{project.tools}</p>
             <br/>
             {project.link ? <><p><a href={project.link} rel="noreferrer" target="_blank"><strong>View Live Page</strong></a></p> <br/></> : null}
