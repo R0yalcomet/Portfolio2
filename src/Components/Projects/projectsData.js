@@ -80,9 +80,10 @@ const projectsData = {
         name: "COMING SOON - Maze Game",
         image: null,
         summary: "Use data structures and a recursive dfs traversal method to create random, playable mazes.",
-        goal: "The purpose of this project is to demonstrate knowledge of complex data structures and search algorithms by using these methods to create a simple game. This is also intended to introduce myself to working with the VUE.js framework.",
+        goal: "The purpose of this project is to demonstrate knowledge of complex data structures and search algorithms by using these methods to create a simple game. This is also intended to introduce myself to working with the Vue.js framework.",
         features: "This project will include a single page where the user can prompt the application to create a random grid-based maze. The user will then be able to navigate the maze using directional inputs to move to the end space.",
         commentary: "I plan to recreate multiple games in a similar format (such as minesweeper, battleship, chess, etc.) to test and expand my knowledge. These additional games might be created as stand-alone projects or consolidated into a single \"game-hub\" project.",
+        tools: "Javascript, data structures, algorithms, Vue",
         todo: ["finish page structure", "create nodes and grid data structure", "create a recursive dfs traversal method to determine paths and walls of maze", "handle user input and translate to maze navigation", "cleanup and polish final product", "deploy project"],
         link: null,
         github: null
